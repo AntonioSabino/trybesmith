@@ -6,6 +6,8 @@ export interface User {
   password: string;
 }
 
+export type UserLogin = Omit<User, 'classe' | 'level' | 'id'>;
+
 export interface Product {
   id?: number;
   name: string;

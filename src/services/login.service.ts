@@ -2,8 +2,10 @@ import { User } from '../interface/interfaces';
 import UserModel from '../models/user.model';
 import generateJWT from '../utils/generateJWT';
 
-const createUser = async (user: User): Promise<string> => {
-  const userData = await UserModel.createUser(user);
+const login = async (user: User): Promise<string | null> => {
+  const userData = await UserModel.getUser(user);
+
+  if (!userData) return null;
 
   const { password: passDB, ...userWithoutPass } = userData;
 
@@ -12,6 +14,6 @@ const createUser = async (user: User): Promise<string> => {
   return token;
 };
 
-const UserService = { createUser };
+const LoginService = { login };
 
-export default UserService;
+export default LoginService;
