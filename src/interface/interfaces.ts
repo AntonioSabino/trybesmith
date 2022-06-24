@@ -15,3 +15,9 @@ export interface Product {
 export interface ErrorHandler extends Error {
   status: number;
 }
+
+export interface Order {
+  id?: number;
+  userId: number;
+  productsIds?: number[] | number;
+}
