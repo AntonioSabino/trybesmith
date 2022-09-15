@@ -1,6 +1,6 @@
 # Projeto Trybesmith!
 
-Uma loja de itens medievais, no formato de uma API, utilizando Typescript.
+Uma loja de itens medievais, no formato de uma API, utilizando Typescript, NodeJS, Express, JWT, JOI, MySQL.
 
 Aplicação em camadas (Models, Service e Controllers), por meio dessa aplicação, será possível realizar as operações básicas que se pode fazer em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão (ou CRUD, para as pessoas mais íntimas stuck_out_tongue_winking_eye - Create, Read, Update e Delete).
 
